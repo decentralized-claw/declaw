@@ -92,4 +92,4 @@ OpenClaw (core)
 
 ## License
 
-MIT
+BUSL-1.1
