@@ -10,6 +10,38 @@ Declaw is a suite of open-source extensions built on top of the OpenClaw platfor
 
 ---
 
+## Getting Started
+
+To run the full application ecosystem, you need to start both the backend (`clawfi`) and frontend (`clawid`) services.
+
+### 1. Start the Backend (`clawfi`)
+
+This service handles agent logic, storage, and external API calls.
+
+```bash
+cd clawfi
+npm install
+cp .env.example .env
+# Edit .env and add your OPENAI_API_KEY
+npm run dev
+```
+
+The backend server will start on [http://localhost:3000](http://localhost:3000).
+
+### 2. Start the Frontend (`clawid`)
+
+This is the user interface for interacting with agents.
+
+```bash
+cd clawid
+npm install
+npm run dev
+```
+
+The frontend will start on [http://localhost:5173](http://localhost:5173).
+
+---
+
 ## Projects
 
 ### 1. `clawid` — Decentralized Identity for Clawbots
